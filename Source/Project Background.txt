@@ -1,0 +1,107 @@
+Wärtsilä
+Senior Developer, 15 June 2026
+Hiililaiturinkuja 2 00180 Helsinki
+
+Interviewers:
+* Jenni Lahtinen - People Manager (DPD), Finland https://www.linkedin.com/in/jenni-lahtinen-formerly-karkinen-4b451451/
+
+* Ran Nyman – Scrum Master
+ 
+C#/.NET, React/Angular, TypeScript, SQL, Cloud, CI/CD, API, integrations, production systems.
+
+———
+
+Test App Wartsila
+
+Wartsila.TestApp.TestConsole
+/Users/popovan/SS/BB-MAC/wartsila-testapp
+
+Hello Andrey!
+
+Sampo Torttila from Wärtsilä has invited you to
+solve some programming challenges.
+
+You can view the problems at https://wartsila.kattis.com/test/programming/yw4divfmztck5ystik7j6fuv2ftbpu46
+
+Purpose of the test is to get some preliminary indication of your programming skills. If you cannot solve the problems, even the partial solutions are a proof knowledge. You can search for solutions from he net but the actual input needs to be individual/unique. Good luck with the test!
+
+Yours Truly,
+Sampo Torttila
+Wärtsilä
+
+
+Sampo Torttila
+
+Please read through the following instructions carefully to get started.
+1. This test contains a number of programming problems.
+2. You will have 48 hours to solve these problems.
+3. Your code should read input from STDIN and write to STDOUT.
+4. You may attempt each problem as many times as you need in the time allotted.
+5. If you need additional help, check the tutorial pages.
+6. Once you start the test you will have 48 hours to complete the test. The last solution submitted for each problem is used in evaluating your code performance.
+7. Once you are ready, click Start to start the test. You have 2 days 0:31:53 to start the test.
+
+
+———
+
+Dear Agata,
+
+Thank you for your message and for the opportunity.
+
+I confirm that I received the invitation and I will be able to participate in the proposed slot on Monday, 15 June at 15:00.
+
+Kind regards,
+Andrey Popov
+
+————
+
+From: Recruitment Wärtsilä <recruitment@wartsila.com>
+Date: Tuesday, 26. May 2026 at 12.43
+To: andrey.popov.spb@gmail.com <andrey.popov.spb@gmail.com>
+Subject: RE: Onsite Interview Invitation - Senior Developer position at Wärtsilä
+
+Dear Andrey,
+I hope you are well.
+ 
+Just wanted to follow-up on the email below.
+Could you please confirm that you received it and if you will be able to participate in the proposed slot?
+ 
+Thank you
+Agata
+Wartsila Recruitment Team
+ 
+-----Original Appointment----- From: Recruitment Wärtsilä Sent: mercoledì 20 maggio 2026 10:36 To: Lahtinen, Jenni; Nyman, Ran (External); andrey.popov.spb@gmail.com Subject: Onsite Interview Invitation - Senior Developer position at Wärtsilä When: lunedì 15 giugno 2026 15:00-16:00 (UTC+02:00) Helsinki, Kiev, Riga, Sofia, Tallinn, Vilnius. Where: FI Salmisaari 2 - Generation
+ 
+Dear Andrey,  
+ 
+Thank you for your interest in our Senior Developer position at Wärtsilä.
+We are pleased to be taking your application to the next stage and would like to invite you to attend a formal interview in our office in Helsinki.
+ 
+As we would like to schedule this ahead, the details are as follows:
+ Position: Senior Developer
+Date: Monday, 15th June 2026
+Time: 15:00 Helsinki time Duration: 60 minutes Interview location: Wärtsilä Helsinki – room Generation
+Interviewers:
+* Jenni Lahtinen - People Manager (DPD), Finland
+* Ran Nyman – Scrum Master
+ 
+Please confirm your availability by replying to this email or accepting this invitation.
+In case this slot does not work for you, please reply by adding your availability and we’ll find a new slot.
+ 
+ 
+Logistics:
+Address of the Wärtsilä Helsinki office is:
+Hiililaiturinkuja 2
+00180 Helsinki
+ 
+Arriving by foot or public transportation:
+* Shuttle bus nr. 26 or 22K leaves from Ruoholahti (M) every 5 minutes during rush hour.
+* Exact stop is the bus stop in front of Ruoholahti metro station
+* There are paid parking places next to the Wärtsilä office building.
+ 
+When you arrive to the Wärtsilä Helsinki office, register at the reception. Please bring your ID so the receptionists can make you a visitor card. The reception will guide you to wait for your interviewer.
+ 
+We look forward to speaking with you!
+Kind regards,
+On behalf of the hiring manager, the Wärtsilä recruitment team
+￼

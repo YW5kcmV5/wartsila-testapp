@@ -1,0 +1,111 @@
+BEGIN
+
+----- ProblemA ----- 
+Test PASSED: expected="robert", result="robert", input=="robert".
+Test PASSED: expected="robert", result="robert", input=="rooobert".
+Test PASSED: expected="robertapalaxios", result="robertapalaxios", input=="roooooobertapalaxxxxios".
+Test PASSED: expected="robert", result="robert", input=="robert".
+Test PASSED: expected="robert", result="robert", input=="rooobert".
+Test PASSED: expected="robertapalaxios", result="robertapalaxios", input=="roooooobertapalaxxxxios".
+------------------ 
+
+----- ProblemB ----- 
+Test PASSED: expected="1", result="1", input=="kaia".
+Test PASSED: result="True", input=="kaia", comment="kaiak".
+Test PASSED: expected="4", result="4", input=="abcdefgded".
+Test PASSED: result="True", input=="abcdefgded", comment="abcdefedcba".
+Test PASSED: expected="0", result="0", input=="a".
+Test PASSED: result="True", input=="a", comment="a".
+Test PASSED: expected="0", result="0", input=="aa".
+Test PASSED: result="True", input=="aa", comment="aa".
+Test PASSED: expected="1", result="1", input=="ab".
+Test PASSED: result="True", input=="ab", comment="aa".
+Test PASSED: expected="0", result="0", input=="aba".
+Test PASSED: result="True", input=="aba", comment="aba".
+Test PASSED: expected="1", result="1", input=="abc".
+Test PASSED: result="True", input=="abc", comment="aba".
+Test PASSED: expected="2", result="2", input=="abcd".
+Test PASSED: result="True", input=="abcd", comment="abba".
+Test PASSED: expected="2", result="2", input=="abcde".
+Test PASSED: result="True", input=="abcde", comment="abcba".
+Test PASSED: expected="3", result="3", input=="abcdef".
+Test PASSED: result="True", input=="abcdef", comment="abccba".
+Test PASSED: expected="3", result="3", input=="abcdefg".
+Test PASSED: result="True", input=="abcdefg", comment="abcdcba".
+Test PASSED: expected="0", result="0", input=="zzzz".
+Test PASSED: result="True", input=="zzzz", comment="zzzz".
+Test PASSED: expected="1", result="1", input=="zzzy".
+Test PASSED: result="True", input=="zzzy", comment="zzzz".
+Test PASSED: expected="1", result="1", input=="abca".
+Test PASSED: result="True", input=="abca", comment="abba".
+Test PASSED: expected="1", result="1", input=="abcda".
+Test PASSED: result="True", input=="abcda", comment="abcba".
+Test PASSED: expected="1", result="1", input=="aab".
+Test PASSED: result="True", input=="aab", comment="aaa".
+Test PASSED: expected="2", result="2", input=="aabc".
+Test PASSED: result="True", input=="aabc", comment="aaaa".
+Test PASSED: expected="0", result="0", input=="abcba".
+Test PASSED: result="True", input=="abcba", comment="abcba".
+Test PASSED: expected="1", result="1", input=="abccbx".
+Test PASSED: result="True", input=="abccbx", comment="abccba".
+Test PASSED: expected="5", result="5", input=="abcdefghij".
+Test PASSED: result="True", input=="abcdefghij", comment="abcdeedcba".
+Test PASSED: expected="1", result="1", input=="abab".
+Test PASSED: result="True", input=="abab", comment="ababa".
+Test PASSED: expected="2", result="2", input=="abac".
+Test PASSED: result="True", input=="abac", comment="abba".
+Test PASSED: expected="2", result="2", input=="abcab".
+Test PASSED: result="True", input=="abcab", comment="abcba".
+Test PASSED: expected="1", result="1", input=="aaaaab".
+Test PASSED: result="True", input=="aaaaab", comment="aaaaaa".
+------------------ 
+
+----- ProblemC ----- 
+Test PASSED: expected="8 4 3", result="8 4 3", input=="4 4
+8 8 -1 9
+4 10 10 9
+4 3 3 -2
+16 16 2 2
+3 3".
+Test PASSED: expected="impossible", result="impossible", input=="4 4
+8 8 -2 9
+4 10 10 9
+4 3 3 -1
+16 16 2 2
+3 3".
+Test PASSED: expected="1", result="1", input=="1 3
+-1 1 1
+1 3".
+Test PASSED: expected="1", result="1", input=="1 3
+1 1 -1
+1 1".
+Test PASSED: expected="2", result="2", input=="3 1
+-1
+2
+2
+3 1".
+Test PASSED: expected="2", result="2", input=="3 1
+2
+2
+-1
+1 1".
+Test PASSED: expected="1 2", result="1 2", input=="1 5
+-1 1 1 2 2
+1 5".
+Test PASSED: expected="2 1", result="2 1", input=="1 5
+1 1 2 2 -1
+1 1".
+Test PASSED: expected="impossible", result="impossible", input=="1 4
+-1 1 1 -2
+1 2".
+Test PASSED: expected="1", result="1", input=="1 4
+-1 1 1 -2
+1 3".
+Test PASSED: expected="1 3", result="1 3", input=="3 3
+-1 1 1
+2 2 3
+4 4 3
+3 3".
+------------------ 
+
+END

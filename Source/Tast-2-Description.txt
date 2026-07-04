@@ -1,0 +1,45 @@
+Name: Medium (Problem B)
+
+Anna and Bob are having a baby.
+They both enjoy the advantage of having palindrome names, meaning that their names are spelled the same way forwards and backwards.
+Wanting to be good parents, they decide to give their child a palindrome name too.
+The only problem is that they aren’t sure if the one they picked is a palindrome.
+If it turns out it isn’t a palindrome, they want to change it to a palindrome using as few changes as possible.
+The allowed changes are:
+
+Change a letter of the name.
+
+Add a letter to the end of the name.
+
+Help Bob and Anna find out how many changes they need to make to the name to make it a palindrome.
+
+Input
+Input is the name they have chosen.
+
+Output
+Output the number of changes they need to make.
+
+Limits
+The length of the name is at least 1 and at most 100 characters.
+
+The name consists of only lowercase letters a–z.
+
+Sample Input 1: kaia
+Sample Output 1: 1
+Sample Input 2: abcdefgded
+Sample Output 2: 4
+
+--------------------------------
+
+[Explain the underlying problem with your own words:]
+The task is to determine the minimum number of operations needed to transform a given string into a palindrome.
+In one operation, it is possible either to change an existing character or to append one new character to the end of the string.
+The goal is not to build every possible string, but to find the smallest number of required operations.
+
+[Explain your solution to the problem:]
+The solution checks how many character pairs do not match when comparing the string from both ends.
+Each mismatch can be fixed with one replacement.
+To also support append operations, the solution tries possible extended versions of the string using placeholder characters.
+A placeholder represents an appended character that can later be chosen optimally.
+For every candidate length, the same pair comparison is used, and the minimum number of required operations is selected.
+Additional helper methods are included for palindrome checking, demonstration output, and simple test coverage.

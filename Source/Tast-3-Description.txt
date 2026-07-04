@@ -1,0 +1,81 @@
+Name: Hard (Problem C)
+
+Bob Roberts is the self proclaimed “Car Vet” who owns several junk car lots where people can come and search for spare parts for their (ailing) cars.
+The cars in each lot are parked in a fenced-in  [m x n] grid lot, where each car takes up two grid squares.
+Each lot also has zero or more grid locations devoted to piles of parts (fenders, 8-track tape players, wheel covers, fuzzy dice, etc.); these locations are effectively blocked.
+Business has been so good that each of Bob’s lots has only one empty grid space left.
+
+From time to time, Bob or one of his lot attendants drops a part on the ground and it rolls underneath one of the cars.
+The only way to retrieve it is to move the car out of the way.
+Depending on the location of the empty grid space, it may be necessary to move several cars in order to achieve this.
+Cars can only move forward or backward, and car movement is also constrained by the fence, which prevents any car from moving off the lot, and by the blocked grid locations containing piles of parts.
+
+Figure 1 shows an example. An ambihelical hexnut has rolled under car number 3 in row 3, column 3 of the grid (shaded dark gray).
+The space in row 1, column 3 is empty and the space in row 3, column 4 is blocked.
+The only way to retrieve the part is to move car 8, then car 4, then car 3.
+Note that if the locations of the empty grid cell and the blocked grid cell were reversed, it would not be possible to retrieve the part.
+
+See image "Tast-3-Description-Image-1.png" (Figure 1)
+Figure 1: Sample lot. Cars 8, 4, and 3 must be moved, in that order, to uncover the grid location in row 3, column 3.
+This corresponds to Sample Input 1.
+
+The problem here should be obvious:
+For a given location Bob would like to know how to move cars around to uncover that location, or if it is even possible to uncover it.
+
+Input
+Input starts with a line containing two positive integers m, n (m, n <= 250) indicating number of rows and columns of the junk car lot.
+Following this are m lines each containing n integers; the j(th) value on the i(th) line indicates the contents of the grid square at row i, column j.
+All values v are in the range -2 <= v <= 62 500.
+Each non-negative value indicates that half of a junk car is in that location. Every non-negative value appears exactly twice and these two occurrences are horizontally or vertically adjacent to each other.
+A value of -1 indicates the empty grid location and a value of -2 indicates a blocked location.
+There is always exactly one empty location and at least one car, but there may be zero or more blocked locations.
+Following these m lines is a single line containing two integers r C (1 <= r, c <= 250) indicating the row and column number of the desired location to be uncovered.
+This will always correspond to the location of a junk car.
+
+Output
+Display, on a single line separated by spaces, the numbers of the cars that must be moved to make the given location empty.
+They should appear in the order in which they must be moved.
+If there is more than one sequence of possible moves, display the sequence of shortest length.
+If there is still a tie, display the sequence that comes lexicographically first according to the car numbers in the sequence.
+If it is not possible to uncover the desired location, display impossible.
+
+Sample Input 1:
+4 4
+8 8 -1 9
+4 10 10 9
+4 3 3 -2
+16 16 2 2
+3 3
+
+Sample Output 1
+8 4 3
+
+
+Sample Input 2
+4 4
+8 8 -2 9
+4 10 10 9
+4 3 3 -1
+16 16 2 2
+3 3
+
+Sample Output 2
+impossible
+
+--------------------------------
+
+[Explain the underlying problem with your own words:]
+The task is to find the shortest sequence of car moves needed to uncover a target grid cell in a parking lot.
+Each car occupies two adjacent cells and can move only forward or backwards along its orientation.
+The grid also contains one empty cell and possibly blocked cells.
+If several shortest solutions exist, the one with the smallest car number at the first differing move is selected.
+If the target cannot be uncovered, the result is impossible.
+
+[Explain your solution to the problem:]
+The solution models the problem as a graph search.
+Instead of storing every full parking-lot state, each graph node represents the position of the empty cell.
+Moving a car transfers the empty cell from one side of that car to the other, so every valid car move becomes a graph edge labelled with the car number.
+The graph is built from all cars and valid movement directions, ignoring blocked or out-of-grid positions.
+Possible moves are sorted by car number before the breadth-first search. This search prefers smaller car numbers when several shortest answers are possible.
+A breadth-first search is then applied to find the shortest path from the initial empty cell to the target cell, and the stored path state is used to restore the required sequence of car moves.
+
