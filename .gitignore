@@ -3,6 +3,7 @@ obj/
 
 .DS_Store
 .vs/
+.idea/
 .vscode/
 
 runner/output/
