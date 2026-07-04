@@ -1,8 +1,10 @@
 # Wartsila Test Assignment
 
-This repository contains C# solutions for three programming tasks from the Wartsila Senior Developer technical assignment.
+This repository contains C# solutions for three programming tasks from the Wärtsilä Senior Developer technical assignment.
 
-The solutions were prepared as a console application. Each problem reads from standard input and writes to standard output, following the Kattis-style execution model. Local helper tests are included in the source code to make the behavior easy to verify and review.
+The solutions were prepared as a console application.
+Each problem reads from standard input and writes to standard output, following the Kattis-style execution model.
+Local helper tests are included in the source code to make the behavior easy to verify and review.
 
 ## Background
 
@@ -12,7 +14,8 @@ The assignment was provided through the Kattis online problem-solving tool and c
 - Medium: Problem B
 - Hard: Problem C
 
-Due to an issue with the Kattis submission flow, only the first problem was submitted through the platform before access was locked. The remaining implementation, task descriptions, explanations, local tests, and test results are preserved in this repository for review.
+Due to an issue with the Kattis submission flow, only the first problem was submitted through the platform before access was locked.
+The remaining implementation, task descriptions, explanations, local tests, and test results are preserved in this repository for review.
 
 ## Project Structure
 
@@ -42,7 +45,8 @@ For example, `rooobert` becomes `robert`, because the consecutive `ooo` group is
 
 ### Solution
 
-The solution processes the name from left to right and keeps track of the previously processed character. For each character, it appends it to the result only if it is different from the previous character.
+The solution processes the name from left to right and keeps track of the previously processed character.
+For each character, it appends it to the result only if it is different from the previous character.
 
 This removes only adjacent duplicates while preserving all meaningful character changes.
 
@@ -119,9 +123,11 @@ In one operation, it is possible either to change an existing character or to ap
 
 ### Solution
 
-The solution checks how many character pairs do not match when comparing the string from both ends. Each mismatch can be fixed with one replacement.
+The solution checks how many character pairs do not match when comparing the string from both ends.
+Each mismatch can be fixed with one replacement.
 
-To also support append operations, the solution tries possible extended versions of the string using placeholder characters. A placeholder represents an appended character that can later be chosen optimally.
+To also support append operations, the solution tries possible extended versions of the string using placeholder characters.
+A placeholder represents an appended character that can later be chosen optimally.
 
 For every candidate length, the same pair comparison is used, and the minimum number of required operations is selected.
 
@@ -232,11 +238,13 @@ If several shortest solutions exist, the one with the smallest car number at the
 
 The solution models the problem as a graph search.
 
-Instead of storing every full parking-lot state, each graph node represents the position of the empty cell. Moving a car transfers the empty cell from one side of that car to the other, so every valid car move becomes a graph edge labelled with the car number.
+Instead of storing every full parking-lot state, each graph node represents the position of the empty cell.
+Moving a car transfers the empty cell from one side of that car to the other, so every valid car move becomes a graph edge labelled with the car number.
 
 The graph is built from all cars and valid movement directions, ignoring blocked or out-of-grid positions.
 
-Possible moves are sorted by car number before the breadth-first search. This search prefers smaller car numbers when several shortest answers are possible.
+Possible moves are sorted by car number before the breadth-first search.
+This search prefers smaller car numbers when several shortest answers are possible.
 
 A breadth-first search is then applied to find the shortest path from the initial empty cell to the target cell, and the stored path state is used to restore the required sequence of car moves.
 

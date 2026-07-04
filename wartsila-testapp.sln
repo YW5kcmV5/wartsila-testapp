@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{A237E2
 		Source\Tast-3-Description.txt = Source\Tast-3-Description.txt
 		Source\Tast-3-Description-Image-1.png = Source\Tast-3-Description-Image-1.png
 		Source\Tast-Results.txt = Source\Tast-Results.txt
+		Source\README.md = Source\README.md
 	EndProjectSection
 EndProject
 Global
